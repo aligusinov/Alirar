@@ -1,0 +1,37 @@
+{
+    "app-id": "com.aligusinov.Alirar",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "6.5",
+    "sdk": "org.kde.Sdk",
+    "command": "Alirar",
+    "finish-args": [
+        "--share=ipc",
+        "--socket=x11",
+        "--share=network",
+        "--filesystem=host"
+    ],
+    "modules": [
+        {
+            "name": "qt6",
+            "buildsystem": "simple",
+            "build-commands": [],
+            "sources": []
+        },
+        {
+            "name": "Alirar",
+            "buildsystem": "simple",
+            "build-commands": [
+                "g++ -o Alirar main.cpp settingsdialog.cpp `pkg-config --cflags --libs Qt6Core Qt6Gui Qt6Widgets`",
+                "install -Dm755 Alirar /app/bin/Alirar",
+                "install -Dm644 alirar_256.png /app/share/icons/hicolor/256x256/apps/com.aligusinov.Alirar.png"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/aligusinov/Alirar.git",
+                    "branch": "main"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Alirar
+Comment=Modern RAR Archive Manager
+Exec=/usr/local/bin/Alirar
+Icon=alirar
+Terminal=false
+Categories=Utility;Archiving;

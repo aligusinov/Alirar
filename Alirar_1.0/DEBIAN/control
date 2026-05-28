@@ -1,0 +1,11 @@
+Package: alirar
+Version: 1.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Depends: libqt6core6, libqt6gui6, libqt6widgets6, unrar
+Maintainer: aligusinov <aligusinov@github.com>
+Homepage: https://github.com/aligusinov/Alirar
+Description: Modern RAR Archive Manager
+ More modern than WinRAR, completely free!
+ A clean, modern alternative for Linux users.
