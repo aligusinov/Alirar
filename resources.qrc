@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>alirar_256.png</file>
+        <file>alirar_128.png</file>
+        <file>alirar_64.png</file>
+        <file>alirar_32.png</file>
+    </qresource>
+</RCC>
